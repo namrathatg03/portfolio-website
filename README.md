@@ -66,3 +66,21 @@ http://54.227.90.155/
 - Learned how to deploy containers on cloud virtual machines
 - Understood basic DevOps deployment workflow
 
+## Task 3 - CI/CD using GitHub Actions
+
+In this task, GitHub Actions is used to automate Docker build and push process.
+
+When code is pushed to the main branch:
+
+1. Docker image is built automatically
+2. Image is pushed to Docker Hub
+3. The website is ready for deployment
+
+Docker Image:
+namrathatg/portfolio-website
+
+To pull image:
+docker pull namrathatg/portfolio-website:latest
+
+To run container:
+docker run -d -p 8080:80 namrathatg/portfolio-website
